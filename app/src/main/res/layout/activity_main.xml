@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="570dp"
+        android:ems="10"
+        android:hint="Enter First Number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="460dp"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum1" />
+
+    <EditText
+        android:id="@+id/edtNum3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="410dp"
+        android:ems="10"
+        android:hint="Enter Third Number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum2"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="237dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="300dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum2" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="224dp"
+        android:onClick="onAddClick"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswer" />
+
+    <Button
+        android:id="@+id/subButton"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="225dp"
+        android:onClick="onSubClick"
+        android:text="Sub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswer"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/mulButton"
+        android:layout_width="94dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="125dp"
+        android:onClick="onMultiClick"
+        android:text="Multi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton"
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/divButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="125dp"
+        android:onClick="onDivClick"
+        android:text="Div"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mulButton"
+        app:layout_constraintTop_toBottomOf="@+id/subButton" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="onClearClick"
+        android:text="Clear"
+        app:layout_constraintBottom_toTopOf="@+id/subButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
